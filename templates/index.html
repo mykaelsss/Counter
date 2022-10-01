@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" >
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/style.css') }}">
+</head>
+<body class="d-flex justify-content-center text-center mw-100">
+    <div>
+        <h1>Counter</h1>
+        <h2>{{ count }}</h2>
+        <div class="d-flex justify-content-between">
+                <form action="">
+                    <input type="submit" value="Count" class="btn btn-warning text-warning link-dark">
+                </form>
+                <form action="/addtwo">
+                    <input type="submit" value="Add Two" class="btn btn-secondary text-muted link-light ">
+                </form>
+            <form action="/destory_session">
+                <input type="submit" name="" value="Reset" class="btn btn-info text-muted link-light ">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

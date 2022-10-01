@@ -1,0 +1,18 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.btn-warning, .btn-warning:hover {
+    background-color: #275ED7;
+}
+.btn-info, .btn-info:hover {
+    background-color: #DF4C59;
+}
+.btn-secondary, .btn-secondary:hover {
+    background-color: #167247;
+}
+body > div{
+    width: 550px;
+}
